@@ -1,44 +1,40 @@
-/* The navigation bar */
-nav {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    margin: 0px;
-    /* Set the nav to fixed position */
-    top: 0;
-    /* Position the nav at the top of the page */
-    width: 100%;
-    /* Full width */
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.8em;
+    margin: 0;
 }
 
-/* Links inside the nav */
-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+li{
+    padding: 20px;
+}
+
+a{
+    color: #183450;
     text-decoration: none;
 }
 
-/* Change background on mouse-over */.nav a:hover {
-    background: #ddd;
-    color: black;
+/* Responsive UI for text, trigger it once the width of a webpage is less then the max-width */
+@media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+        transition: all 1s;
+    }
+}
+.push-left{
+    margin-left: auto;
 }
 
 body {
-    margin: 0px;
+    margin: auto 0;
     background-color: rgb(41, 40, 40);
 }
 
 .zone {
-    padding: 30px 50px;
-    /* margin: 40px 60px; */
     cursor: pointer;
-    display: inline-block;
     color: #FFF;
     font-size: 2em;
-    border-radius: 4px;
     border: 1px solid #bbb;
     transition: all 0.3s linear;
 }
@@ -57,19 +53,7 @@ body {
 .green {
 
     background: #56B870;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56B870), color-stop(100%, #a5c956));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%, #a5c956 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%, #a5c956 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%, #a5c956 100%);
-    /* IE10+ */
-    background: linear-gradient(top, #56B870 0%, #a5c956 100%);
-    /* W3C */
+
 }
 
 /***********************************************************************
