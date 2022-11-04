@@ -38,16 +38,40 @@ a {
 }
 
 /* Project SECTION */
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 600px));
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+.picture {
+
+    object-fit: cover;
+    background-color: #e314c4;
+    margin: 10px;
+
+}
+
 body {
     margin: auto 0;
     background-color: rgb(41, 40, 40);
 }
 
+
+
 .zone {
     cursor: pointer;
     color: #FFF;
     font-size: 2em;
-    border: 1px solid #bbb;
     transition: all 0.3s linear;
 }
 
