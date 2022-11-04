@@ -1,39 +1,40 @@
 /* Navbar SECTION */
-.main-nav{
+.main-nav {
     display: flex;
     list-style: none;
     font-size: 0.8em;
     margin: 0;
 }
 
-li{
+li {
     padding: 20px;
 }
 
-a{
+a {
     color: #183450;
     text-decoration: none;
 }
 
 /* Responsive UI for text, trigger it once the width of a webpage is less then the max-width */
 @media only screen and (max-width: 600px) {
-    .main-nav{
+    .main-nav {
         font-size: 0.5em;
         padding: 0;
         transition: all 1s;
     }
 }
-.push-left{
+
+.push-left {
     margin-left: auto;
 }
 
 /* Cover SECTION */
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     /* vh is the viewport height, height: my_numbervh; my_number will be the % taken up the cover on the webpage */
-    height: 50vh; 
+    height: 50vh;
 }
 
 /* Project SECTION */
@@ -57,71 +58,19 @@ body {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
 
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
+/* SECTION background colors */
 .green {
-
-    background: #56B870;
-
+    background-image: linear-gradient(to bottom, #45A368, #157539);
 }
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
 .red {
-    background: #C655BE;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C655BE), color-stop(100%, #cf0404));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%, #cf0404 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%, #cf0404 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%, #cf0404 100%);
-    /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%, #cf0404 100%);
-    /* W3C */
+    background-image: linear-gradient(to bottom, #E16360, #A1201D);
 }
 
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
 .yellow {
-    background: #F3AAAA;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F3AAAA), color-stop(100%, #febf04));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
-    /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%, #febf04 100%);
-    /* W3C */
+    background-image: linear-gradient(to bottom, #E1B660, #A1751D);
 }
 
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
 .blue {
-    background: #0d5092;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
-    /* IE10+ */
-    background: linear-gradient(top, #04407d 0%, #60abf8 44%, #4096ee 100%);
+    background-image: linear-gradient(to bottom, #496197, #1C346C);
 }
