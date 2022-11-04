@@ -1,3 +1,4 @@
+/* Navbar SECTION */
 .main-nav{
     display: flex;
     list-style: none;
@@ -26,6 +27,14 @@ a{
     margin-left: auto;
 }
 
+/* Cover SECTION */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* vh is the viewport height, height: my_numbervh; my_number will be the % taken up the cover on the webpage */
+    height: 50vh; 
+}
 body {
     margin: auto 0;
     background-color: rgb(41, 40, 40);
